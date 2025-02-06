@@ -84,16 +84,12 @@ INNER JOIN niveau AS n
 ON j.id_niveau=n.id_niveau;
 
 	-- nombre de participant à la compétition judo31
-SELECT COUNT(id_judoka) AS "nombre de participants" 
-FROM judoka_competition
-WHERE id_cpt=1;
 
--- ne fonctionne pas avec le nom de la competition
 SELECT COUNT(id_judoka) AS "nombre de participants" 
 FROM judoka_competition AS jc
 INNER JOIN competition AS c
 ON jc.id_cpt=c.id_cpt
-WHERE c.id_cpt="judo31";
+WHERE c.nom_cpt="judo31";
 
 	-- liste du nombre de participant à la competition judo81
 SELECT nom_judoka, prenom_judoka, age, sexe 
