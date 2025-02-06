@@ -95,7 +95,7 @@ INNER JOIN competition AS c
 ON jc.id_cpt=c.id_cpt
 WHERE c.id_cpt="judo31";
 
-	-- liste des participants à la competition judo81
+	-- liste du nombre de participant à la competition judo81
 SELECT nom_judoka, prenom_judoka, age, sexe 
 FROM judoka AS j
 INNER JOIN judoka_competition AS jc
