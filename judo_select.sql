@@ -26,7 +26,7 @@ SELECT nom_judoka, prenom_judoka, age, couleur_ceinture
 FROM judoka AS j
 INNER JOIN niveau AS n
 ON j.id_niveau=n.id_niveau
-WHERE j.age>19;
+WHERE j.age>19 AND n.couleur_ceinture="marron";
 
 	-- liste des judokas par ordre alphabétique
 SELECT nom_judoka, prenom_judoka, couleur_ceinture
